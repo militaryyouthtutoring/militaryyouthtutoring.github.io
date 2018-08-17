@@ -1,0 +1,403 @@
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body, h1, body, div, a, ol, ul, li, h2, p, em, img, button {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	letter-spacing: 1px;
+}
+
+#logo {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	transition-duration: 0.2;
+	z-index: 16;
+	background-color: white;
+	border-radius: 5px;
+}
+
+#logo img {
+	width: 70px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 30px #666;
+}
+
+#logo:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#header {
+	position: relative;
+	padding: 200px 50% 220px 10%;
+}
+
+#headertext {
+	position: relative;
+	z-index: 30;
+}
+
+#headertext h1 {
+	font-size: 70px;
+	padding-bottom: 40px;
+	color: #444;
+}
+
+#headertext a {
+	font-size: 25px;
+	padding: 15px 60px;
+	color: white;
+	background-color: #5ddfde;
+	margin: 20px 0px;
+	border-radius: 10px;
+	transition-duration: 0.2s;
+	box-shadow: 5px 5px 30px #ccc;
+}
+
+#headertext a:hover {
+	background-color: #f37847;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#headerimg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 600px;
+	height: 100%;
+	z-index: 0;
+	border-radius: 0px 0px 0px 250px;
+}
+
+#intro {
+	padding: 280px 10% 200px 10%;
+	margin-top: -240px;
+	color: white;
+	background: url("images/aboutimg.jpg");
+	background-size: 140% 100%;
+	background-position: right;
+}
+
+#intro h1 {
+	font-size: 60px;
+	padding: 20px 0px;
+	text-align: center;
+}
+
+#intro p {
+	font-size: 22px;
+}
+
+#goals {
+	padding: 100px 10%;
+	text-align: center;
+}
+
+#goals h1 {
+	font-size: 60px;
+	color: #5ddfde;
+}
+
+#goals .fas {
+	font-size: 100px;
+	padding: 20px 0px;
+	color: #5ddfde;
+}
+
+#goals .col-sm-6 {
+	padding: 50px 10%;
+}
+
+#goals h2 {
+	font-size: 35px;
+	color: #f37847;
+	padding: 10px 0px;
+}
+
+#goals p {
+	font-size: 22px;
+	color: #666;
+}
+
+#team {
+	background: url("images/team.jpg");
+	background-size: 100% 100%;
+	margin-top: -100px;
+	padding: 300px 10% 200px 10%;
+	text-align: center;
+	position: relative;
+	z-index: 12;
+}
+
+#team h1 {
+	color: white;
+	font-size: 60px;
+	padding-bottom: 30px;
+}
+
+#team h3 {
+	font-size: 35px;
+	padding: 15px 0px;
+	color: white;
+}
+
+#contact {
+	padding: 80px 10%;
+	position: relative;
+	z-index: 3;
+	text-align: center;
+}
+
+#contact h1 {
+	color: #f37847;
+	font-size: 60px;
+}
+
+#contact h3 {
+	font-size: 40px;
+	color: #444;
+	padding: 30px 0px;
+}
+
+#contact h3 a {
+	color: #5ddfde;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+#contact h3 a:hover {
+	text-decoration: none;
+	color: #f37847;
+}
+
+#footer {
+	background-color: #444;
+	padding: 10px 0px;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+#footer p {
+	font-size: 20px;
+}
+
+.slideanim {visibility:hidden;}
+
+.slideanim2 {visibility:hidden;}
+
+  .slideup {
+      animation-name: slideup;
+      -webkit-animation-name: slideup;
+      animation-duration: 0.8s;
+      -webkit-animation-duration: 0.8s;
+      visibility: visible;
+  }
+
+  .slideleft {
+      animation-name: slideleft;
+      -webkit-animation-name: slideleft;
+      animation-duration: 0.8s;
+      -webkit-animation-duration: 0.8s;
+      visibility: visible;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(40%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slideup {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+  @keyframes slideleft {
+    0% {
+      opacity: 0;
+      transform: translateX(-40%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes slideleft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-40%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+
+
+@media only screen and (max-width: 1050px) {
+	#logo img {
+		width: 50px;
+	}
+
+	#header {
+		position: relative;
+		padding: 150px 40% 150px 10%;
+	}
+
+	#headerimg {
+		width: 500px;
+	}
+
+	#intro {
+		margin-top: -250px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	#header {
+		position: relative;
+		padding: 150px 5% 100px 10%;
+	}
+
+	#headertext {
+		position: relative;
+		z-index: 30;
+	}
+
+	#headertext h1 {
+		font-size: 40px;
+		padding-bottom: 30px;
+	}
+
+	#headertext a {
+		font-size: 20px;
+		padding: 15px 30px;
+		background-color: #f37847;
+	}
+
+	#headertext a:hover {
+		background-color: #5ddfde;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	#headerimg {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 80%;
+		height: 100%;
+		z-index: 0;
+		border-radius: 0px 0px 0px 100px;
+	}
+
+	#intro {
+		padding: 320px 10% 150px 10%;
+		margin-top: -250px;
+		color: white;
+		background: url("images/aboutimg.jpg");
+		background-size: 180% 100%;
+		background-position: right;
+	}
+
+	#intro h1 {
+		font-size: 35px;
+	}
+
+	#intro p {
+		font-size: 18px;
+	}
+
+	#goals {
+		padding: 60px 10%;
+	}
+
+	#goals h1 {
+		font-size: 35px;
+	}
+
+	#goals .fas {
+		font-size: 60px;
+	}
+
+	#goals .col-sm-6 {
+		padding: 30px 10%;
+	}
+
+	#goals h2 {
+		font-size: 28px;
+	}
+
+	#goals p {
+		font-size: 18px;
+	}
+
+	#team {
+		background: url("images/team.jpg");
+		background-size: 100% 100%;
+		margin-top: -30px;
+		padding: 250px 10% 200px 10%;
+		text-align: center;
+		position: relative;
+		z-index: 12;
+	}
+
+	#team h1 {
+		color: white;
+		font-size: 35px;
+		padding-bottom: 20px;
+	}
+
+	#team h3 {
+		font-size: 28px;
+		padding: 15px 0px;
+	}
+
+	#contact {
+		padding: 60px 10%;
+	}
+
+	#contact h1 {
+		color: #f37847;
+		font-size: 35px;
+	}
+
+	#contact h3 {
+		font-size: 20px;
+		color: #444;
+		padding: 30px 0px;
+	}
+
+	#footer {
+		background-color: #444;
+		padding: 10px 0px;
+		width: 100%;
+		color: white;
+		text-align: center;
+	}
+
+	#footer p {
+		font-size: 17px;
+	}
+}
