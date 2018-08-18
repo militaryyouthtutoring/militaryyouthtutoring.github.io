@@ -82,7 +82,7 @@ h1 {
 	padding: 280px 10% 200px 10%;
 	margin-top: -240px;
 	color: white;
-	background: url("images/aboutimg.jpg");
+	background: url("images/aboutimg.jpeg");
 	background-size: 140% 100%;
 	background-position: right;
 }
@@ -316,7 +316,7 @@ h1 {
 		padding: 320px 10% 150px 10%;
 		margin-top: -250px;
 		color: white;
-		background: url("images/aboutimg.jpg");
+		background: url("images/aboutimg.jpeg");
 		background-size: 180% 100%;
 		background-position: right;
 	}
